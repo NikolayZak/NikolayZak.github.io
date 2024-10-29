@@ -45,18 +45,30 @@
             many challenges as I must organize myself and three other peers for the on time completion of group 
             projects and assignments while maintaining a high degree of quality.</p>
     </section>
-    
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>TFT Board Solver</h3>
-            
+            <p>My first big project started in first year (2022) where I felt confident enough with my programming skills 
+                to take on my first project to be developed in C. The original TFT Board Solver parsed txt files which 
+                contained all the relevant information. This allowed for flexibility as TFT is a game where the dataset 
+                is changing every six months. This approach continued all the way through to it's current state however, 
+                more fields of data were later implemented. The first versions of the TFT Board solver struggled to solve 
+                for boards of size 7 or greater. Reason being for solving an n sized board the number of possible boards 
+                is O(n!). using permutations and many optimizations I learned in class I've gotten the TFT Board Solver down 
+                to a O(59 choose n) worst case. I've created a recursive pruning algorithm that only computes 'promising' 
+                boards and a specialized vector which is four times faster than std::vector! After lots of work on the project 
+                the system is now able to determine all of the best boards (based on traits) for a size 9 board in 7 seconds. 
+                That's over 12.5 billion unique permutations of boards it searches through!
+            </p>
     
         </div>
         <div class="project">
             <h3>Blackjack Hand Calculator</h3>
-            
+        </div>
     </section>
+    
     
     
 </body>

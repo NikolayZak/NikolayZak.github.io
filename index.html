@@ -64,6 +64,11 @@
                 That's over 12.5 billion unique permutations of boards it searches through!
             </p>
             <img src="TFT_Board_Solver.png" alt="Screenshot of the TFT Board Solver application">
+            <p>Here is how I created my own bit-based vector class which is faster than std::vector with several limitations. 
+                The vector has no reference to which element was placed in what order. The vector cannot hold duplicates. 
+                The vector cannot hold values outside of 0-63. Despite these limitations, there are plenty of use cases 
+                for such a vector and should be implemented if needed, for instance, the TFT_Board_Solver.
+            </p>
     
         </div>
         <div class="project">
@@ -77,6 +82,7 @@
                 resources for such a calculation does not really exist is because it can take over an hour with a standard algorithm.
                 I am attempting to whittle the computational time down to under 5 minutes. Currently my algorithm is able to produce 
                 results after 20 minutes but still has room for plenty of optimizations I am working on implementing.</p>
+
         </div>
     </section>
     
